@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmpGitModelStoreContainer" CdmEntityContainer="EmpGitEntities">
+    <EntitySetMapping Name="Emps">
+      <EntityTypeMapping TypeName="EmpGitModel.Emp">
+        <MappingFragment StoreEntitySet="Emp">
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="EName" ColumnName="EName" />
+          <ScalarProperty Name="Edesig" ColumnName="Edesig" />
+          <ScalarProperty Name="ESalary" ColumnName="ESalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
