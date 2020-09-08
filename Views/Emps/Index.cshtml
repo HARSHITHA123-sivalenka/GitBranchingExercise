@@ -6,40 +6,11 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.EName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Edesig)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ESalary)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.EName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Edesig)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ESalary)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EId })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="row">
+    <div class="col-md-6"><h2>Index using partial view</h2> </div>
+    
+</div>
+<div class=" col-md-6">
+    @Html.Partial("PView");
+    
+</div>
